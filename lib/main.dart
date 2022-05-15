@@ -2,6 +2,7 @@
 
 //? import 'package:flutter/cupertino.dart'; contiene todos los widgets de MAterial, pero mas estelirizado para IOS
 
+import 'package:contador/screens/home_screen.dart'; //! IMPORTA ARCHIVO
 import 'package:flutter/material.dart'; 
 
 void main(){  //? un widget no es mas que una pieza de lego
@@ -14,9 +15,7 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return const MaterialApp( //! widget
-     home: Center(  //! widget -- es unaforma de trabjar que nos pide cual es nuestro widger que queremos mostrar acá
-       child: Text("Hola mundo"), //! widget 
-     )    
+     home: HomeScreen() //? importa nuestro archivo HomeScreen
    );
   }  //? es una clase solamente
 }
