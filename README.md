@@ -1,16 +1,18 @@
-# contador
+# Proyecto Contador.
 
-A new Flutter project.
+Mi primer acercamiento con el framework de Flutter
+<br>
+## Primero Pasos
 
-## Getting Started
+Estaré publicando continuamente mi progreso a atraves de este repositorio.
 
-This project is a starting point for a Flutter application.
+Tambien estáre dejando los links hacia los cursos que me encuentro estudiando para no perder la data y en un futuro mediano poder agradecer.
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter: Primero pasos.](https://www.youtube.com/playlist?list=PLCKuOXG0bPi3MDPemKf-u4pI7snjWBCfw)
+- [Documentación Oficial de flutter.](https://flutter.dev/)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+En otro archivo MD estaré dejando mis apuntes con los terminos/tips que sean necesarios de comprender, así tambien para tenerlo como posible bitacora futura...
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A darlo todo uwu!!!
+
+<img src="https://matwrites.com/wp-content/uploads/2018/03/Flutter.png" alt="imagen shida uwu">
