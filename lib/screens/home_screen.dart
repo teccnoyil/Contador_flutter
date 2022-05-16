@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key})
-      : super(
-            key:
-                key); //? Key nos sirve para identificar un widget propiamiente dentro de el contexto
+  const HomeScreen({Key? key}): super(key:key); //? Key nos sirve para identificar un widget propiamiente dentro de el contexto
 
   @override
   Widget build(BuildContext context) {
@@ -15,19 +12,15 @@ class HomeScreen extends StatelessWidget {
           title: const Text("HomeScreen"),
           elevation: 10.0, //? nos crea una sombra abajo del Appbar
         ),
-        body: Center(
-          child: Column(
-            children: const <Widget>[
-              Text('Deliver features faster'),
-              Text('Craft beautiful UIs'),
-              Expanded(
-                child: FittedBox(
-                  fit: BoxFit.contain, // otherwise the logo will be tiny
-                  child: FlutterLogo(),
-                ),
-              ),
+        body: Center( 
+          child: Column( 
+            mainAxisAlignment: MainAxisAlignment.center,
+            //crossAxisAlignment: CrossAxisAlignment.center, //? Es relativo al numero de mayor tamaño
+            children: const <Widget>[ //! esto no es necesario, pero nos ayuda a saber que todo lo que llevara a dentro, solo seran widgets
+              Text('NUMERO DE CLICKS'),
+              Text('0'),
             ],
-          ), //! widget  CHILD => UN HIJO, SOLO PODEMOS COLOCAR UN WIDGET
+          ),
         ));
     //throw UnimplementedError(); //? throw => lanzar error implementado, en caso de eror lanza esto
   }
