@@ -19,13 +19,19 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             //crossAxisAlignment: CrossAxisAlignment.center, //? Es relativo al numero de mayor tamaño
             children:  const[
-              //! esto no es necesario, pero nos ayuda a saber que todo lo que llevara a dentro, solo seran widgets
               Text('NUMERO DE CLICKS', style: fontSize30,),
               Text( '0',style: TextStyle(fontSize: 30),
               ),
             ],
           ),
-        ));
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: const Icon(Icons.add), 
+          onPressed: () {
+            print("Hola mundo");
+          },
+        ),  
+      );
   }
 }
 
