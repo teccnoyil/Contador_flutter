@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {  //! StatelessWidget se dibuja y se queda de esa manera
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     
     const fontSize30 =  TextStyle(fontSize: 30); //? creamos un parametro con los valores de fontSize
-
+    int contador = 10;
     return Scaffold (
         //?  LIENZO/PARA EMPEZAR A COLOR LOW WIDGETS
         appBar: AppBar(
@@ -18,9 +18,9 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             //crossAxisAlignment: CrossAxisAlignment.center, //? Es relativo al numero de mayor tamaño
-            children:  const[
-              Text('NUMERO DE CLICKS', style: fontSize30,),
-              Text( '0',style: TextStyle(fontSize: 30),
+            children:  [
+              const Text('NUMERO DE CLICKS', style: fontSize30,),
+              Text( "$contador",style: const TextStyle(fontSize: 30),
               ),
             ],
           ),
@@ -30,7 +30,8 @@ class HomeScreen extends StatelessWidget {
           
           child: const Icon(Icons.add), 
           onPressed: () {
-            print("Hola mundo");
+            print("Hola mundo: $contador");
+            contador++;
           },
           backgroundColor: Colors.red,  //? Color del boton
         ),  
