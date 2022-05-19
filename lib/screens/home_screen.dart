@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
     
     const fontSize30 =  TextStyle(fontSize: 30); //? creamos un parametro con los valores de fontSize
 
-    return Scaffold(
+    return Scaffold (
         //?  LIENZO/PARA EMPEZAR A COLOR LOW WIDGETS
         appBar: AppBar(
           title: const Text("HomeScreen"),
@@ -25,11 +25,14 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat, //? Modificamos la pocision del boton
         floatingActionButton: FloatingActionButton(
+          
           child: const Icon(Icons.add), 
           onPressed: () {
             print("Hola mundo");
           },
+          backgroundColor: Colors.red,  //? Color del boton
         ),  
       );
   }
